@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia's Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+        }
+      #container {
+          width: 720px;
+          margin: 0 auto;
+         background-color: lightpink; 
+         overflow: hidden;
+      }
+      h1 {
+          padding-left: 10px;
+          background-color: rgb(211, 124, 231);
+      }
+      p {
+          padding: 15px 40px;
+          border: 1px solid rgb(16, 14, 14);
+          border-radius: 5px;
+          margin: 40px 0;
+      }
+      .column {
+          width: 50%;
+          float: left;
+      }
+      #intro {
+          position: relative;
+          left: 0px;
+          top: 0px;
+      }
+      #nav {
+          position: fixed;
+          right: 0px;
+          top: 0px;
+          width: 100px;
+          height: 100px;
+          background-color: blueviolet;
+          border-radius: 100px;
+          /*box-shadow: ; */
+      }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Julia's page</h1>
+
+        <p id="intro">Welcome to my website. I want to share my p5 sketches with you below: </p>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti exercitationem, maxime ullam possimus fugiat, rem iste dicta voluptatum unde nesciunt dolorem expedita totam nemo dignissimos. Natus sunt officia perspiciatis minima.</p>
+        
+        <div class="column">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quae obcaecati animi voluptatem recusandae laudantium. Id, pariatur. Voluptate eum, placeat fugit aspernatur labore hic sunt odio? Ut odio ducimus obcaecati.
+        </div>
+        <div class="column">
+            <img src="images/cat.jpg" width="400px">
+        </div>
+
+    </div>
+    <div id="nav">
+    </div>
+</body>
+
+</html>
