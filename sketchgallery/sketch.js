@@ -7,7 +7,8 @@ let speedX1 = 0;
 let speedY1 = 0;
 
 function setup() {
-  createCanvas(400, 400);
+  let canvas = createCanvas(400, 400);
+  canvas.parent('sketchcontainer');
   // setupGif(50);   
   speedX1 = random(-3, 3);
   speedY1 = random(-3, 3);
