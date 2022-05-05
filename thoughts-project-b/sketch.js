@@ -186,6 +186,15 @@ function setup() {
   );
 }
 
+function mousePressed ()
+{
+  let d = dist(mouseX, mouseY, this.x, this.y);
+  if (mouseIsPressed && d < 50) {
+    window.open(random(this.urls));
+  }
+}
+
+
 function draw() {
   background(255, 220, 220);
 
