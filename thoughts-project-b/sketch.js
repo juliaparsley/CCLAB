@@ -188,9 +188,8 @@ function setup() {
 
 function mousePressed ()
 {
-  let d = dist(mouseX, mouseY, this.x, this.y);
-  if (mouseIsPressed && d < 50) {
-    window.open(random(this.urls));
+  for (let i = 0; i < words.length; i++) {
+    words[i].checkForClick();
   }
 }
 
@@ -228,8 +227,24 @@ class Word {
     translate(this.x, this.y);
     textSize(this.size);
     text(this.word, 0, 0);
+    ellipse(0,0,2,2);
     pop();
+  }
 
-    console.log("Image for " + this.word + ": " + random(this.urls));
+  checkForClick() {
+    let d = dist(mouseX, mouseY, this.x, this.y);
+
+    textSize(this.size);
+    let w = textWidth(this.word);
+    
+    if (mouseIsPressed) {
+      if (this.x <= mouseX && mouseX <= this.x+w &&
+          this.y-this.size <= mouseY && mouseY <= this.y) {
+            console.log("Image for " + this.word + ": " + random(this.urls));
+           window.open(random(this.urls), '', 'left=100,top=100,width=320,height=320');
+
+       
+      }
+    }
   }
 }
