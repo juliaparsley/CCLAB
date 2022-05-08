@@ -227,7 +227,6 @@ class Word {
     translate(this.x, this.y);
     textSize(this.size);
     text(this.word, 0, 0);
-    ellipse(0,0,2,2);
     pop();
   }
 
