@@ -2,6 +2,9 @@ let words = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  
+
+
 
   // create a new Word and add it to the list of words
   words.push(
@@ -195,7 +198,7 @@ function mousePressed ()
 
 
 function draw() {
-  background(255, 220, 220);
+  background(255, 220, 220); 
 
   for (let i = 0; i < words.length; i++) {
     words[i].move();
