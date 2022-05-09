@@ -187,6 +187,65 @@ function setup() {
       "https://i2.cdn.turner.com/money/dam/assets/140620132500-traveling-experiences-seven-continent-1024x576.jpg",
     ])
   );
+  words.push(
+    new Word("pig", 25, [
+      "https://media.istockphoto.com/photos/newborn-piglet-on-spring-green-grass-on-a-farm-picture-id956025942?k=20&m=956025942&s=612x612&w=0&h=YENs9eney3fZT6qp3Trg-wnzqwWJLd1QGdbL7WcTpJU=",
+      "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F20%2F2015%2F09%2Fmiss-piggy-1-435-1.jpg&q=60",
+    ])
+  );
+  words.push(
+    new Word("paint", 30, [
+      "https://icdn.digitaltrends.com/image/digitaltrends/ms-paint-windows-95-header-720x540.jpg",
+      "https://www.owatroldirect.co.uk/wp-content/uploads/2019/12/paints.jpg",
+    ])
+  );
+  words.push(
+    new Word("mouse", 27, [
+      "https://static.wikia.nocookie.net/tomandjerry/images/e/ec/Kisspng-jerry-mouse-tom-cat-nibbles-tom-and-jerry-5afa8781629bc3.8019112615263681294039.png/revision/latest/scale-to-width-down/1200?cb=20200118121940",
+      "https://wallpaperaccess.com/full/6229261.jpg",
+    ])
+  );
+  words.push(
+    new Word("ice", 29, [
+      "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2F494027a/MediaObjects/41586_2013_BF494027a_Figa_HTML.jpg",
+      "https://i1.sndcdn.com/artworks-000200997466-vy6cx8-t500x500.jpg",
+    ])
+  );
+  words.push(
+    new Word("seasons", 16, [
+      "https://preview.redd.it/tpa44xja3jsy.jpg?auto=webp&s=10ed96945f20ac125b3c7d4dac40ef8012d7de49",
+      "http://www.nasa.gov/sites/default/files/thumbnails/image/edu_seasons_large.png",
+    ])
+  );
+  words.push(
+    new Word("camera", 18, [
+      "https://m.media-amazon.com/images/I/914hFeTU2-L._SL1500_.jpg",
+      "https://www.learnaboutfilm.com/wp-content/uploads/2017/05/z90.jpg",
+    ])
+  );
+  words.push(
+    new Word("hero", 20, [
+      "http://www.dystryktzero.pl/images/detailed/69/1100x620-ironman.jpg",
+      "https://media.makeameme.org/created/youre-my-hero-5bdc54.jpg",
+    ])
+  );
+  words.push(
+    new Word("bread", 28, [
+      "https://www.kingarthurbaking.com/sites/default/files/2020-02/the-easiest-loaf-of-bread-youll-ever-bake.jpg",
+      "http://pm1.narvii.com/7050/aa0a95fbe2c36bbc3658feed4ca309d5ca8b91e6r1-720-720v2_uhq.jpg",
+    ])
+  );
+  words.push(
+    new Word("castle", 30, [
+      "https://i.pinimg.com/originals/20/b4/02/20b402ddae6f27ea5f014de570b8d12a.jpg",
+      "https://a.cdn-hotels.com/gdcs/production12/d1130/83f1c8c6-e12d-4e69-8433-c5bbc90b5ad6.jpg",
+    ])
+  );
+  words.push(
+    new Word("vampire",23, [ "http://i.vimeocdn.com/video/447247604-2b355b1c8847775213b033fa9ff857603be2e4ae4d61308153f89934075a639d-d_640",
+      "https://m.media-amazon.com/images/M/MV5BMDk3YzgxNDQtNTEzOS00NDMyLWFlYmYtYTZlMDk1NDkxNmMyXkEyXkFqcGdeQXVyNzA5NjUyNjM@._V1_FMjpg_UX1000_.jpg",
+    ])
+  );
 }
 
 function mousePressed ()
@@ -243,7 +302,7 @@ class Word {
       if (this.x <= mouseX && mouseX <= this.x+w &&
           this.y-this.size <= mouseY && mouseY <= this.y) {
             console.log("Image for " + this.word + ": " + random(this.urls));
-           window.open(random(this.urls), '', 'left=100,top=100,width=320,height=320');
+           window.open(random(this.urls), '', 'left=500,top=200,width=500,height=450');
 
        
       }
